@@ -2,14 +2,15 @@
 
 Dashboard interactivo construido en HTML, CSS y JavaScript puro que centraliza los indicadores clave de cobranza de una operación multi-país, con filtros dinámicos y seguimiento de facturas caso por caso.
 
-**[Ver demo en vivo](https://victoria2809.github.io/dashboard-cobranza/)**
+**[Ver demo en vivo](https://victoria2809.github.io/dashboard-cobranza/)** haz click aqui y podras ver la demo! 
+
 
 ## El problema
+En cobranza multi-país es normal que la información quede repartida: un reporte de pendientes en un lado, un cálculo de atraso hecho a mano en Excel en otro, y el motivo real de por qué una factura puntual no se cobra (una disputa, una promesa de pago) que termina viviendo en la memoria de alguien o perdido en un mail. Si alguien pregunta "¿cómo estamos con la cobranza de Brasil este mes?", hay que cruzar todo eso a mano.
 
-En cobranza multi-país, la información suele vivir repartida: un reporte de facturas pendientes acá, un cálculo de días de atraso hecho a mano en Excel allá, y el contexto de por qué una factura puntual no se cobra (una disputa, una promesa de pago) que solo alguien recuerda de memoria o queda perdido en un hilo de mail. Responder "¿cómo estamos con la cobranza de Brasil este mes?" implica cruzar varias fuentes a mano.
+Quise ver si podía resolver eso con un panel simple.
 
-## La solución
-
+## Qué hace
 Un panel único donde se puede:
 
 - Ver de un vistazo cuántas facturas están pendientes, pagadas o en disputa
@@ -33,12 +34,12 @@ Los comentarios se guardan en el navegador al editarlos
 
 ## Características técnicas
 
-- **KPIs dinámicos**: facturas pendientes, pagadas, en disputa, % de cobranza (por monto) y promedio de días para cobrar — todos recalculados en tiempo real según los filtros activos.
-- **Filtros encadenados**: el selector de agencia se ajusta automáticamente según el país elegido.
-- **Comentarios editables por factura**: persisten en `localStorage`, así el contexto de una factura puntual (ej. "en disputa por cargo duplicado") queda documentado.
-- **Ordenamiento por urgencia**: la tabla prioriza automáticamente facturas en disputa y pendientes más atrasadas.
-- **Gráfico de estado por país**: barras apiladas (pagada / pendiente / en disputa) usando Chart.js.
-- **Sin dependencias de build**: es un solo archivo HTML, no requiere `npm install` ni proceso de compilación.
+Los KPIs se recalculan en tiempo real según los filtros, no son valores fijos
+El selector de agencia se ajusta solo según el país que elegiste, para no mostrar agencias que no correspondan
+Los comentarios quedan guardados con localStorage, así el contexto de una factura no se pierde de vista aunque recargue la página
+La tabla prioriza automáticamente lo más urgente en vez de mostrar todo en el orden en que se cargó
+El gráfico de barras apiladas por país usa Chart.js
+Es un solo archivo HTML — nada de npm install ni pasos de compilación, así que se puede abrir y editar directo
 
 ## Interfaz
 
