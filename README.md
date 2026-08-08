@@ -2,7 +2,7 @@
 
 Dashboard interactivo construido en HTML, CSS y JavaScript puro que centraliza los indicadores clave de cobranza de una operación multi-país, con filtros dinámicos y seguimiento de facturas caso por caso.
 
-**[Ver demo en vivo]([https://victoria2809.github.io/dashboard-cobranza/](https://github.com/Victoria2809/dashboard-cobranza/blob/main/final%20dashboard%20github%20testeoo.html))**
+**[Ver demo en vivo]((https://github.com/Victoria2809/dashboard-cobranza/blob/main/final%20dashboard%20github%20testeoo.html)/)**
 
 ## El problema
 
