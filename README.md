@@ -1,8 +1,9 @@
+[Uploading final dashboard github testeoo.html…]()
 # Panel de Cobranza — Cuentas por Cobrar Multi-País
 
 Dashboard interactivo construido en HTML, CSS y JavaScript puro que centraliza los indicadores clave de cobranza de una operación multi-país, con filtros dinámicos y seguimiento de facturas caso por caso.
 
-**[Ver demo en vivo](https://victoria2809.github.io/dashboard-cobranza/)**
+
 
 ## El problema
 
@@ -52,22 +53,7 @@ Diseño responsive, con la misma identidad visual del resto del portfolio.
 | Gráficos | Chart.js (vía CDN) |
 | Estilos | CSS puro |
 | Persistencia de comentarios | localStorage del navegador |
-
-## Estructura del repo
-
-```
+ 
 └── index.html   # Dashboard completo: datos, lógica, estilos e interfaz
 ```
-
-## Cómo desplegarlo (versión propia)
-
-1. Descargá o cloná este repo.
-2. Subí `index.html` a un repositorio de GitHub.
-3. En **Settings → Pages**, elegí la rama `main` y la carpeta `/ (root)`.
-4. GitHub Pages publica el archivo en unos minutos en `https://tu-usuario.github.io/nombre-del-repo/`.
-
-No requiere backend ni variables de entorno: todo corre en el navegador.
-
-## Nota sobre los datos
-
-Los datos de facturación son **ficticios**, generados con una semilla fija para que el dashboard se vea igual en cada carga. Los comentarios que edite cada persona quedan guardados solo en su propio navegador (no hay una base de datos compartida detrás). El siguiente paso natural de este proyecto es conectar el dashboard a una fuente de datos real, por ejemplo un Google Sheet vía Apps Script.[final dashboard github testeoo.html](https://github.com/user-attachments/files/30858600/final.dashboard.github.testeoo.html)
+ 
